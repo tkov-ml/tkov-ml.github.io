@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Tomáš Kováč</title>
+  <meta name="description" content="Data science and machine learning projects by Tomáš Kováč: CNN image classification, energy-label prediction and sentiment analysis of stock and crypto markets.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="wordmark" href="./" aria-label="Tomáš Kováč, home">TK<span class="wordmark-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="./">Home</a>
+      <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
+      <a href="references.html">References</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <span class="eyebrow">Portfolio</span>
+      <h1>Selected projects</h1>
+      <p>University and personal projects in machine learning, deep learning and financial econometrics. The code, notebooks and full write-ups are on <a href="https://github.com/tkov-aubss">GitHub</a>.</p>
+    </section>
+
+    <section class="projects">
+      <article class="project">
+        <div class="project-img">
+          <img src="assets/img/groceries.jpg" alt="Grad-CAM heatmaps showing where the CNN looks on misclassified grocery images" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-meta">Deep learning · ML for BI 2 · 2026</div>
+          <h3>Grocery product classification with CNNs</h3>
+          <p>Classifying photos of grocery products into 25 categories (Freiburg Groceries). I compared a convnet built from scratch, developed step by step from a baseline through augmentation to residual blocks, with a fine-tuned EfficientNetV2B0.</p>
+          <ul>
+            <li><strong>82.2 %</strong> test accuracy with the fine-tuned EfficientNetV2B0, against 64.6 % for the from-scratch residual CNN</li>
+            <li>Regularisation alone doubled validation accuracy over the overfitting baseline</li>
+            <li>Grad-CAM shows the from-scratch model relies on colour and shape, not texture</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">TensorFlow / Keras</span><span class="tag">Transfer learning</span><span class="tag">Grad-CAM</span>
+          </div>
+          <a class="btn" href="https://github.com/tkov-aubss/Groceries_DL">View on GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-img">
+          <img src="assets/img/energy.jpg" alt="Random-forest feature importances for predicting building energy labels" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-meta">Machine learning · Data Science Project · 2026</div>
+          <h3>Predicting Danish building energy labels</h3>
+          <p>A group project that predicts a building's energy label (A–G) from 2,205 official energy-label reports for Aarhus. We scraped the reports and parsed them from XML. Two models were compared: one using the full report, and one using structural features only, which could be applied to buildings without a report.</p>
+          <ul>
+            <li>End-to-end pipeline: web scraping, XML parsing, cleaning and feature engineering</li>
+            <li>Gradient boosting reached <strong>68 %</strong> test accuracy (weighted F1 0.69) across 7 imbalanced classes</li>
+            <li>U-values of walls, windows and roof, and building age, are the strongest structural predictors</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Web scraping</span><span class="tag">Gradient boosting</span>
+          </div>
+          <a class="btn" href="https://github.com/tkov-aubss/EnergyLabels">View on GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-img">
+          <img src="assets/img/thesis.jpg" alt="Wavelet coherence between Tesla returns and Twitter sentiment" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-meta">Bachelor's thesis · VŠE Prague · 2025</div>
+          <h3>Twitter sentiment and investment decisions</h3>
+          <p>Does sentiment on Twitter move with the returns and volatility of Apple, Microsoft, Tesla, Amazon, Alphabet and Bitcoin? Tweets are scored with VADER, volatility is modelled with GARCH and EGARCH, and the two are linked through lagged correlation, cross-correlation and wavelet coherence.</p>
+          <ul>
+            <li>Analysed about <strong>13.9 million</strong> tweets (13.8 M on Bitcoin, 52 k on the five stocks)</li>
+            <li>Significant sentiment–price links for Tesla, Bitcoin and Apple, but not for Microsoft, Amazon or Alphabet</li>
+            <li>On a daily frequency, sentiment mostly follows past price moves rather than predicting them</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">NLP / VADER</span><span class="tag">GARCH</span><span class="tag">Wavelet analysis</span>
+          </div>
+          <a class="btn" href="https://github.com/tkov-aubss/bachelor_InvestAnalysis">View on GitHub ↗</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Tomáš Kováč</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
