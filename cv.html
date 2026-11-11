@@ -5,178 +5,381 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CV | Tomas Kovac</title>
   <meta name="description" content="CV of Tomas Kovac: MSc Business Intelligence at Aarhus BSS, experience at Kamstrup, BMW Czech Republic, Unilever and PKF APOGEO.">
+  <meta name="theme-color" content="#0f1228">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/site.js" defer></script>
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to content</a>
   <header class="header">
-    <a class="wordmark" href="./" aria-label="Tomas Kovac, home">TK<span class="wordmark-dot">.</span></a>
+    <a class="wordmark" href="./" aria-label="Tomas Kovac, home"><span class="prompt" aria-hidden="true">&gt;</span>TK<span class="cursor" aria-hidden="true"></span></a>
     <nav aria-label="Main navigation">
-      <a href="./">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="references.html">References</a>
-      <a href="cv.html" class="active" aria-current="page">CV</a>
+      <a href="./">home</a>
+      <a href="portfolio.html">portfolio</a>
+      <a href="references.html">references</a>
+      <a href="cv.html" aria-current="page">cv</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="page-head">
-      <span class="eyebrow">Curriculum vitae</span>
+      <p class="prompt-line">cat cv.md</p>
       <h1>CV</h1>
-      <p>Aarhus, Denmark · <button type="button" class="inline-btn" data-email>Email me</button> · <a href="https://www.linkedin.com/in/tomas-kovac-aubss/">LinkedIn</a></p>
+      <p>Aarhus, Denmark · <button type="button" class="text-btn" data-email>email me</button> · <a href="https://www.linkedin.com/in/tomas-kovac-aubss/">LinkedIn</a></p>
     </section>
 
-    <section class="cv-section">
-      <h2>Education</h2>
+    <!-- ============ Experience: logo timeline ============ -->
+    <section class="cv-block" aria-labelledby="exp-h">
+      <p class="label">01 / experience</p>
+      <h2 id="exp-h">Where I've worked</h2>
+      <p class="hint">click a role to open it</p>
 
-      <div class="entry">
-        <div class="entry-date">Sep 2025 – present</div>
-        <div>
-          <h3>MSc in Business Intelligence</h3>
-          <p class="entry-sub">Aarhus University, School of Business and Social Sciences · Aarhus, Denmark</p>
-          <p>Master's thesis in spring 2027. Open to a company-based thesis.</p>
-
-          <p class="label">Completed</p>
-          <ul class="courses">
-            <li><span>Machine Learning for Business Intelligence 1</span><span class="ects">10 ECTS</span></li>
-            <li><span>Machine Learning for Business Intelligence 2</span><span class="ects">10 ECTS</span></li>
-            <li><span>Customer Analytics</span><span class="ects">10 ECTS</span></li>
-            <li><span>Data Science Project</span><span class="ects">10 ECTS</span></li>
-            <li><span>Database Management and Data Visualisation</span><span class="ects">10 ECTS</span></li>
-            <li><span>Business Intelligence</span><span class="ects">5 ECTS</span></li>
-            <li><span>Business Forecasting</span><span class="ects">5 ECTS</span></li>
-            <li><span>High-Frequency Finance and Algo-Trading</span><span class="ects">5 ECTS</span></li>
-          </ul>
-
-          <p class="label">In progress</p>
-          <ul class="courses">
-            <li><span>Decision Modelling</span><span class="ects">10 ECTS</span></li>
-            <li><span>AI Business Experiments</span><span class="ects">5 ECTS</span></li>
-            <li><span>Forecasting with Machine Learning</span><span class="ects">5 ECTS</span></li>
-            <li><span>Generative AI with LLMs</span><span class="ects">5 ECTS</span></li>
-          </ul>
-          <p class="entry-sub" style="margin-top:12px">Course descriptions: <a href="https://kursuskatalog.au.dk/en/?year=2026-2027">Aarhus University course catalogue ↗</a></p>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Sep 2021 – Jun 2025</div>
-        <div>
-          <h3>BSc in Business Administration and Management</h3>
-          <p class="entry-sub">Prague University of Economics and Business (VŠE) · Prague, Czech Republic</p>
-          <ul>
-            <li>Bachelor's thesis: <a href="https://vskp.vse.cz/96853_analyza-investicneho-rozhodovania-s-vyuzitim-sentimentalnej-analyzy?author=Kováč&page=1">Analysis of investment decisions using sentiment analysis</a></li>
-            <li>Academic Senator, Faculty of Business Administration (Apr 2023 – Jun 2025)</li>
-            <li>Exchange semester at ZHAW School of Management and Law, Winterthur, Switzerland (2024)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="cv-section">
-      <h2>Experience</h2>
-
-      <div class="entry">
-        <div class="entry-date">Jan 2026 – present</div>
-        <div>
-          <h3>Data &amp; Analytics Student Worker</h3>
-          <p class="entry-sub">Kamstrup A/S · Aarhus, Denmark · started as Master Data Student Worker</p>
-          <ul>
-            <li>Work directly with the company's data platform architect on the Databricks lakehouse, building and maintaining the master data models that feed reporting in 12 domains.</li>
-            <li>Found and flagged 11 % duplicate records in the customer master using Splink probabilistic record linkage, and turned the output into a prioritised clean-up report for the Sales team.</li>
-            <li>Implemented object- and role-level security in Databricks, so each business function sees only the data it is entitled to.</li>
-            <li>Rebuilt the employee data flow from Oracle via Azure Blob Storage into Databricks. A repeatable ingestion pipeline built to the Spark Declarative Pipelines and Databricks Asset Bundles standards replaced the manual extract.</li>
-            <li>Maintain and extend the Power BI estate: data models, dashboards and report support for business users.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Feb 2025 – Aug 2025</div>
-        <div>
-          <h3>Sales Steering and Operations Intern</h3>
-          <p class="entry-sub">BMW Czech Republic s.r.o. · Prague, Czech Republic</p>
-          <ul>
-            <li>Automated the local allocation of production orders across factories, central sales and the dealer network. Rule-driven VBA automation that notifies each party directly replaced a manual coordination loop.</li>
-            <li>Built the first like-to-like registration report for the Czech market. It made registrations comparable across sales channels (private, business, fleet) and models, not only in aggregate.</li>
-            <li>Automated recurring sales reporting in Excel and Tableau, including the weekly competitor registration report. Supported forecasting, logistics and ordering, and reported analysis directly to C-level management.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Aug 2024 – Jan 2025</div>
-        <div>
-          <h3>Finance Intern</h3>
-          <p class="entry-sub">Unilever ČR · Prague, Czech Republic</p>
-          <ul>
-            <li>Working capital and credit management, reporting, forecasting and budgeting. Automated recurring reporting and credit workflows in Power Automate and Excel.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Nov 2022 – Dec 2023</div>
-        <div>
-          <h3>Junior Transaction Consultant</h3>
-          <p class="entry-sub">PKF APOGEO Group · Prague, Czech Republic · Trainee from Nov 2022, Junior Consultant from Sep 2023</p>
-          <ul>
-            <li>Financial analysis and projections, evaluation of targets and competitors, transaction documentation and due diligence on domestic and cross-border M&amp;A. Earlier rotations through asset valuation, audit and tax.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Mar 2022 – Jan 2025</div>
-        <div>
-          <h3>President</h3>
-          <p class="entry-sub">Klub mladých manažerů (student non-profit) · Prague · President Jun 2024 – Jan 2025, Head of Events Mar 2022 – Sep 2023</p>
-          <ul>
-            <li>Led a team of 24, owned the budget and strategy, and built partnerships with companies and the Prague University of Economics and Business.</li>
-          </ul>
-        </div>
+      <div class="tl" data-from="2022-01" data-to="2026-12">
+        <div class="tl-head" aria-hidden="true"><span>role</span><div class="tl-axis"></div></div>
+        <ol class="tl-rows">
+          <li><button type="button" class="tl-row" data-open="exp-kamstrup" aria-haspopup="dialog">
+            <span class="tl-info">
+              <span class="logo lg-kamstrup" role="img" aria-label="Kamstrup"></span>
+              <span><span class="tl-role">Data &amp; Analytics Student Worker</span><span class="tl-when">Kamstrup · Jan 2026 – now</span></span>
+            </span>
+            <span class="tl-track"><span class="tl-bar" data-start="2026-01" data-end="present"></span></span>
+          </button></li>
+          <li><button type="button" class="tl-row" data-open="exp-bmw" aria-haspopup="dialog">
+            <span class="tl-info">
+              <span class="logo lg-bmw" role="img" aria-label="BMW"></span>
+              <span><span class="tl-role">Sales Steering &amp; Operations Intern</span><span class="tl-when">BMW Czech Republic · Feb – Aug 2025</span></span>
+            </span>
+            <span class="tl-track"><span class="tl-bar" data-start="2025-02" data-end="2025-08"></span></span>
+          </button></li>
+          <li><button type="button" class="tl-row" data-open="exp-unilever" aria-haspopup="dialog">
+            <span class="tl-info">
+              <span class="logo lg-unilever" role="img" aria-label="Unilever"></span>
+              <span><span class="tl-role">Finance Intern</span><span class="tl-when">Unilever ČR · Aug 2024 – Jan 2025</span></span>
+            </span>
+            <span class="tl-track"><span class="tl-bar" data-start="2024-08" data-end="2025-01"></span></span>
+          </button></li>
+          <li><button type="button" class="tl-row" data-open="exp-pkf" aria-haspopup="dialog">
+            <span class="tl-info">
+              <span class="logo lg-pkf" role="img" aria-label="PKF APOGEO"></span>
+              <span><span class="tl-role">Junior Transaction Consultant</span><span class="tl-when">PKF APOGEO · Nov 2022 – Dec 2023</span></span>
+            </span>
+            <span class="tl-track"><span class="tl-bar" data-start="2022-11" data-end="2023-12"></span></span>
+          </button></li>
+          <li><button type="button" class="tl-row" data-open="exp-kmm" aria-haspopup="dialog">
+            <span class="tl-info">
+              <span class="logo lg-kmm-sym" role="img" aria-label="Klub mladých manažerů"></span>
+              <span><span class="tl-role">Head of Events → President</span><span class="tl-when">Klub mladých manažerů · Mar 2022 – Jan 2025</span></span>
+            </span>
+            <span class="tl-track">
+              <span class="tl-bar thin" data-start="2022-03" data-end="2025-01"></span>
+              <span class="tl-bar" data-start="2022-03" data-end="2023-09"></span>
+              <span class="tl-bar" data-start="2024-06" data-end="2025-01"></span>
+            </span>
+          </button></li>
+        </ol>
+        <p class="tl-foot" aria-hidden="true"><span>role</span><span class="k-thin">member between roles</span><span class="k-now">today</span></p>
       </div>
     </section>
 
-    <section class="cv-section">
-      <h2>Technical skills</h2>
-      <dl class="skills">
-        <dt>Python</dt><dd>pandas, NumPy, scikit-learn, XGBoost, Keras/TensorFlow, matplotlib/seaborn, Splink</dd>
-        <dt>R</dt><dd>tidymodels</dd>
-        <dt>Machine learning</dt><dd>Regression and classification, regularisation, cross-validation and resampling, tree ensembles and gradient boosting, SVMs, neural networks, hyperparameter search</dd>
-        <dt>Statistics &amp; methods</dt><dd>Experimental design and hypothesis testing, DAGs and Bayesian networks, segmentation, forecasting, linear and integer programming, simulation</dd>
-        <dt>Data &amp; BI</dt><dd>SQL, Git, Databricks, Power BI, Power Query, Jupyter Notebooks, Docker</dd>
+    <!-- ============ Education: logo wall ============ -->
+    <section class="cv-block" aria-labelledby="edu-h">
+      <p class="label">02 / education</p>
+      <h2 id="edu-h">Where I've studied</h2>
+      <p class="hint">click a logo to see the courses</p>
+
+      <ul class="wall">
+        <li><button type="button" class="wall-item" data-open="edu-au" aria-haspopup="dialog">
+          <span class="wall-tile"><span class="logo lg-au" role="img" aria-label="Aarhus University"></span></span>
+          <span class="wall-meta">
+            <span class="tag">master's</span>
+            <span class="deg">MSc in Business Intelligence</span>
+            <span class="where">Aarhus BSS · Sep 2025 – now</span>
+            <span class="open">courses →</span>
+          </span>
+        </button></li>
+        <li><button type="button" class="wall-item" data-open="edu-zhaw" aria-haspopup="dialog">
+          <span class="wall-tile"><span class="logo lg-zhaw" role="img" aria-label="ZHAW Zurich University of Applied Sciences"></span></span>
+          <span class="wall-meta">
+            <span class="tag">exchange</span>
+            <span class="deg">Exchange semester</span>
+            <span class="where">ZHAW School of Management and Law · Winterthur · 2024</span>
+            <span class="open">details →</span>
+          </span>
+        </button></li>
+        <li><button type="button" class="wall-item" data-open="edu-vse" aria-haspopup="dialog">
+          <span class="wall-tile"><span class="logo lg-vse" role="img" aria-label="Prague University of Economics and Business (VŠE)"></span></span>
+          <span class="wall-meta">
+            <span class="tag">bachelor's</span>
+            <span class="deg">BSc in Business Administration and Management</span>
+            <span class="where">VŠE Prague · Sep 2021 – Jun 2025</span>
+            <span class="open">details →</span>
+          </span>
+        </button></li>
+      </ul>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section class="cv-block" aria-labelledby="skills-h">
+      <p class="label">03 / toolkit</p>
+      <h2 id="skills-h" class="solo">Technical skills</h2>
+      <dl class="spec">
+        <div><dt>Python</dt><dd>pandas, NumPy, scikit-learn, XGBoost, Keras/TensorFlow, matplotlib/seaborn, Splink</dd></div>
+        <div><dt>R</dt><dd>tidymodels</dd></div>
+        <div><dt>Machine learning</dt><dd>Regression and classification, regularisation, cross-validation and resampling, tree ensembles and gradient boosting, SVMs, neural networks, hyperparameter search</dd></div>
+        <div><dt>Statistics &amp; methods</dt><dd>Experimental design and hypothesis testing, DAGs and Bayesian networks, segmentation, forecasting, linear and integer programming, simulation</dd></div>
+        <div><dt>Data &amp; BI</dt><dd>SQL, Git, Databricks, Power BI, Power Query, Jupyter Notebooks, Docker</dd></div>
       </dl>
     </section>
 
-    <section class="cv-section">
-      <h2>Certifications &amp; awards</h2>
-      <div class="entry"><div class="entry-date">2025</div><div>DataCamp Data Engineer Associate in Python. Currently completing the Machine Learning Scientist in Python track.</div></div>
-      <div class="entry"><div class="entry-date">2025</div><div>IELTS Academic, C1</div></div>
-      <div class="entry"><div class="entry-date">2024</div><div>The Fresh Connection, supply chain simulation</div></div>
-      <div class="entry"><div class="entry-date">2023</div><div><strong>EY Audit Challenge, 1st place.</strong> National case competition, judged by an expert panel.</div></div>
-      <div class="entry"><div class="entry-date">2023</div><div>University of California, Irvine: Project Management, the basics for success</div></div>
-      <div class="entry"><div class="entry-date">2021</div><div>Deutsches Sprachdiplom II der KMK, C1</div></div>
+    <!-- ============ Certifications ============
+         Each "verify" link points to the issuer. Swap in the personal
+         credential URL where the issuer provides one (DataCamp, Coursera). -->
+    <section class="cv-block" aria-labelledby="cert-h">
+      <p class="label">04 / proof</p>
+      <h2 id="cert-h" class="solo">Certifications &amp; awards</h2>
+      <dl class="spec">
+        <div><dt class="yr">2025</dt><dd class="cert">
+          <span>Data Engineer Associate in Python. Currently completing the Machine Learning Scientist in Python track.<span class="by">DataCamp</span></span>
+          <a class="verify" href="https://www.datacamp.com/certificate/DEA0010409662578">verify ↗</a>
+        </dd></div>
+        <div><dt class="yr">2025</dt><dd class="cert">
+          <span>IELTS Academic, C1<span class="by">British Council · IDP · Cambridge English</span></span>
+        </dd></div>
+        <div><dt class="yr">2024</dt><dd class="cert">
+          <span>The Fresh Connection, supply chain simulation<span class="by">Inchainge</span></span>
+          <a class="verify" href="https://education.inchainge.com/certificate/W7S3RMJJ4JNMN7HL">verify ↗</a>
+        </dd></div>
+        <div><dt class="yr">2023</dt><dd class="cert">
+          <span><span class="flag">1st place</span>EY Audit Challenge. National case competition, judged by an expert panel.<span class="by">EY Czech Republic</span></span>
+        </dd></div>
+        <div><dt class="yr">2023</dt><dd class="cert">
+          <span>Project Management: The Basics for Success<span class="by">University of California, Irvine · Coursera</span></span>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/3GPHEFVA9BUF">verify ↗</a>
+        </dd></div>
+        <div><dt class="yr">2021</dt><dd class="cert">
+          <span>Deutsches Sprachdiplom II der KMK, C1<span class="by">KMK · Zentralstelle für das Auslandsschulwesen</span></span>
+        </dd></div>
+      </dl>
     </section>
 
-    <section class="cv-section">
-      <h2>Languages</h2>
-      <dl class="skills">
-        <dt>Slovak / Czech</dt><dd>Native</dd>
-        <dt>English</dt><dd>C1, professional working proficiency</dd>
-        <dt>German</dt><dd>C1 certified (2021)</dd>
+    <!-- ============ Languages ============ -->
+    <section class="cv-block" aria-labelledby="lang-h">
+      <p class="label">05 / languages</p>
+      <h2 id="lang-h" class="solo">Languages</h2>
+      <dl class="spec">
+        <div><dt>Slovak / Czech</dt><dd><span class="cefr" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="lang-level">native</span></dd></div>
+        <div><dt>English</dt><dd><span class="cefr" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="lang-level">C1, professional working proficiency</span></dd></div>
+        <div><dt>German</dt><dd><span class="cefr" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="lang-level">C1, certified 2021</span></dd></div>
       </dl>
     </section>
   </main>
 
+  <!-- ============ Windows ============ -->
+  <dialog class="win crop" id="exp-kamstrup" aria-labelledby="exp-kamstrup-t">
+    <div class="win-inner">
+      <div class="win-bar"><span class="path">~/experience/kamstrup.log</span><button type="button" class="win-close" data-close aria-label="Close">esc ✕</button></div>
+      <div class="win-body">
+        <div class="win-head">
+          <div>
+            <p class="win-when">Jan 2026 – present · Aarhus, Denmark</p>
+            <h3 id="exp-kamstrup-t">Data &amp; Analytics Student Worker</h3>
+          </div>
+          <span class="logo lg-kamstrup" aria-hidden="true"></span>
+        </div>
+        <p class="win-sub">Kamstrup A/S · started as Master Data Student Worker</p>
+        <ul>
+          <li>Work directly with the company's data platform architect on the Databricks lakehouse, building and maintaining the master data models that feed reporting in 12 domains.</li>
+          <li>Found and flagged 11 % duplicate records in the customer master using Splink probabilistic record linkage, and turned the output into a prioritised clean-up report for the Sales team.</li>
+          <li>Implemented object- and role-level security in Databricks, so each business function sees only the data it is entitled to.</li>
+          <li>Rebuilt the employee data flow from Oracle via Azure Blob Storage into Databricks. A repeatable ingestion pipeline built to the Spark Declarative Pipelines and Databricks Asset Bundles standards replaced the manual extract.</li>
+          <li>Maintain and extend the Power BI estate: data models, dashboards and report support for business users.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="win crop" id="exp-bmw" aria-labelledby="exp-bmw-t">
+    <div class="win-inner">
+      <div class="win-bar"><span class="path">~/experience/bmw.log</span><button type="button" class="win-close" data-close aria-label="Close">esc ✕</button></div>
+      <div class="win-body">
+        <div class="win-head">
+          <div>
+            <p class="win-when">Feb 2025 – Aug 2025 · Prague, Czech Republic</p>
+            <h3 id="exp-bmw-t">Sales Steering and Operations Intern</h3>
+          </div>
+          <span class="logo lg-bmw" aria-hidden="true"></span>
+        </div>
+        <p class="win-sub">BMW Czech Republic s.r.o.</p>
+        <ul>
+          <li>Automated the local allocation of production orders across factories, central sales and the dealer network. Rule-driven VBA automation that notifies each party directly replaced a manual coordination loop.</li>
+          <li>Built the first like-to-like registration report for the Czech market. It made registrations comparable across sales channels (private, business, fleet) and models, not only in aggregate.</li>
+          <li>Automated recurring sales reporting in Excel and Tableau, including the weekly competitor registration report. Supported forecasting, logistics and ordering, and reported analysis directly to C-level management.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="win crop" id="exp-unilever" aria-labelledby="exp-unilever-t">
+    <div class="win-inner">
+      <div class="win-bar"><span class="path">~/experience/unilever.log</span><button type="button" class="win-close" data-close aria-label="Close">esc ✕</button></div>
+      <div class="win-body">
+        <div class="win-head">
+          <div>
+            <p class="win-when">Aug 2024 – Jan 2025 · Prague, Czech Republic</p>
+            <h3 id="exp-unilever-t">Finance Intern</h3>
+          </div>
+          <span class="logo lg-unilever" aria-hidden="true"></span>
+        </div>
+        <p class="win-sub">Unilever ČR</p>
+        <ul>
+          <li>Working capital and credit management, reporting, forecasting and budgeting. Automated recurring reporting and credit workflows in Power Automate and Excel.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="win crop" id="exp-pkf" aria-labelledby="exp-pkf-t">
+    <div class="win-inner">
+      <div class="win-bar"><span class="path">~/experience/pkf-apogeo.log</span><button type="button" class="win-close" data-close aria-label="Close">esc ✕</button></div>
+      <div class="win-body">
+        <div class="win-head">
+          <div>
+            <p class="win-when">Nov 2022 – Dec 2023 · Prague, Czech Republic</p>
+            <h3 id="exp-pkf-t">Junior Transaction Consultant</h3>
+          </div>
+          <span class="logo lg-pkf" aria-hidden="true"></span>
+        </div>
+        <p class="win-sub">PKF APOGEO Group · Trainee from Nov 2022, Junior Consultant from Sep 2023</p>
+        <ul>
+          <li>Financial analysis and projections, evaluation of targets and competitors, transaction documentation and due diligence on domestic and cross-border M&amp;A. Earlier rotations through asset valuation, audit and tax.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="win crop" id="exp-kmm" aria-labelledby="exp-kmm-t">
+    <div class="win-inner">
+      <div class="win-bar"><span class="path">~/experience/kmm.log</span><button type="button" class="win-close" data-close aria-label="Close">esc ✕</button></div>
+      <div class="win-body">
+        <div class="win-head">
+          <div>
+            <p class="win-when">Mar 2022 – Jan 2025 · Prague</p>
+            <h3 id="exp-kmm-t">President</h3>
+          </div>
+          <span class="logo lg-kmm-sym" aria-hidden="true"></span>
+        </div>
+        <p class="win-sub">Klub mladých manažerů (student non-profit) · President Jun 2024 – Jan 2025, Head of Events Mar 2022 – Sep 2023</p>
+        <ul>
+          <li>Led a team of 24, owned the budget and strategy, and built partnerships with companies and the Prague University of Economics and Business.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="win crop" id="edu-au" aria-labelledby="edu-au-t">
+    <div class="win-inner">
+      <div class="win-bar"><span class="path">~/education/aarhus-msc.md</span><button type="button" class="win-close" data-close aria-label="Close">esc ✕</button></div>
+      <div class="win-body">
+        <div class="win-head">
+          <div>
+            <p class="win-when">Sep 2025 – present · Aarhus, Denmark</p>
+            <h3 id="edu-au-t">MSc in Business Intelligence</h3>
+          </div>
+          <span class="logo lg-au" aria-hidden="true"></span>
+        </div>
+        <p class="win-sub">Aarhus University, School of Business and Social Sciences. Master's thesis in spring 2027, open to a company-based thesis.</p>
+
+        <div class="ects-bar">
+          <div class="track" role="img" aria-label="65 ECTS completed, 25 in progress, 30 remaining of 120">
+            <span class="seg done" style="flex:65"></span><span class="seg wip" style="flex:25"></span><span class="seg todo" style="flex:30"></span>
+          </div>
+          <div class="keys" aria-hidden="true"><span class="k-done">65 done</span><span class="k-wip">25 in progress</span><span class="k-todo">30 to go, thesis</span><span>/ 120 ECTS</span></div>
+        </div>
+
+        <p class="label">completed</p>
+        <ul class="courses">
+          <li><span>Machine Learning for Business Intelligence 1</span><span class="ects">10 ECTS</span></li>
+          <li><span>Machine Learning for Business Intelligence 2</span><span class="ects">10 ECTS</span></li>
+          <li><span>Customer Analytics</span><span class="ects">10 ECTS</span></li>
+          <li><span>Data Science Project</span><span class="ects">10 ECTS</span></li>
+          <li><span>Database Management and Data Visualisation</span><span class="ects">10 ECTS</span></li>
+          <li><span>Business Intelligence</span><span class="ects">5 ECTS</span></li>
+          <li><span>Business Forecasting</span><span class="ects">5 ECTS</span></li>
+          <li><span>High-Frequency Finance and Algo-Trading</span><span class="ects">5 ECTS</span></li>
+        </ul>
+
+        <p class="label">in progress</p>
+        <ul class="courses">
+          <li><span>Decision Modelling</span><span class="ects">10 ECTS</span></li>
+          <li><span>AI Business Experiments</span><span class="ects">5 ECTS</span></li>
+          <li><span>Forecasting with Machine Learning</span><span class="ects">5 ECTS</span></li>
+          <li><span>Generative AI with LLMs</span><span class="ects">5 ECTS</span></li>
+        </ul>
+        <p class="hint" style="margin-top:18px">Course descriptions: <a href="https://kursuskatalog.au.dk/en/?year=2026-2027">Aarhus University course catalogue ↗</a></p>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="win crop" id="edu-zhaw" aria-labelledby="edu-zhaw-t">
+    <div class="win-inner">
+      <div class="win-bar"><span class="path">~/education/zhaw-exchange.md</span><button type="button" class="win-close" data-close aria-label="Close">esc ✕</button></div>
+      <div class="win-body">
+        <div class="win-head">
+          <div>
+            <p class="win-when">2024 · Winterthur, Switzerland</p>
+            <h3 id="edu-zhaw-t">Exchange semester</h3>
+          </div>
+          <span class="logo lg-zhaw" aria-hidden="true"></span>
+        </div>
+        <p class="win-sub">ZHAW School of Management and Law, Zurich University of Applied Sciences · exchange during my BSc at VŠE Prague</p>
+        <p class="label">completed</p>
+        <ul class="courses">
+          <li><span>Quantitative Methods and Big Data</span></li>
+          <li><span>Corporate Finance and Risk Management</span></li>
+          <li><span>Supply Chain Management</span></li>
+          <li><span>Business Value of Blockchain</span></li>
+          <li><span>Business and Human Rights</span></li>
+          <li><span>German Intermediate</span></li>
+          <li><span>Introduction to Swiss Society and Politics</span></li>
+          <li><span>High-Frequency Finance and Algo-Trading</span></li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="win crop" id="edu-vse" aria-labelledby="edu-vse-t">
+    <div class="win-inner">
+      <div class="win-bar"><span class="path">~/education/vse-bsc.md</span><button type="button" class="win-close" data-close aria-label="Close">esc ✕</button></div>
+      <div class="win-body">
+        <div class="win-head">
+          <div>
+            <p class="win-when">Sep 2021 – Jun 2025 · Prague, Czech Republic</p>
+            <h3 id="edu-vse-t">BSc in Business Administration and Management</h3>
+          </div>
+          <span class="logo lg-vse" aria-hidden="true"></span>
+        </div>
+        <p class="win-sub">Prague University of Economics and Business (VŠE)</p>
+        <ul>
+          <li>Bachelor's thesis: <a href="https://vskp.vse.cz/96853_analyza-investicneho-rozhodovania-s-vyuzitim-sentimentalnej-analyzy?author=Kováč&amp;page=1">Analysis of investment decisions using sentiment analysis</a></li>
+          <li>Academic Senator, Faculty of Business Administration (Apr 2023 – Jun 2025)</li>
+          <li>Exchange semester at ZHAW School of Management and Law, Winterthur, Switzerland (2024)</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
   <footer class="footer">
     <span>© 2026 Tomas Kovac</span>
-    <a href="#top">Back to top ↑</a>
+    <nav aria-label="Footer">
+      <button type="button" data-email>email</button>
+      <a href="https://www.linkedin.com/in/tomas-kovac-aubss/">linkedin</a>
+      <a href="https://github.com/tkov-ml">github</a>
+      <a href="#top">top ↑</a>
+    </nav>
   </footer>
 </body>
 </html>
